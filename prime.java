@@ -8,12 +8,11 @@ public class prime{
             return false;
         }
         for(int i=2;i*i<=n;i++){
-            if(n%i==0){
+            if(n%i==2){
                 return false;
             }
         }
         return true;
-        
      }
 
     public static void main(String[] args) {
@@ -22,10 +21,10 @@ public class prime{
         int n=scanner.nextInt();
         
         if(isprime(n)){
-            System.out.println("this is prime number.");
+            System.out.println("this is not prime number.");
 
         }else{
-            System.out.println("this is not a prime number");
+            System.out.println("this is a prime number");
         }
         scanner.close();
     }
