@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class average {
+
+    public static void printAverage(int a, int b, int c){ //Creating a function;
+        int n=3;
+        int add = a + b + c ; //adding int a,int b,int c;
+        int average=add/n; //average=sum of number/number of values;
+        System.out.println(average); //Print Avg;
+
+    }
+    public static void main(String arg[]){
+      Scanner sc=new Scanner(System.in);
+      int a=sc.nextInt();
+      int b=sc.nextInt();
+      int c=sc.nextInt();
+      printAverage(a, b, c); //Calling a function ;
+
+    }
+}
